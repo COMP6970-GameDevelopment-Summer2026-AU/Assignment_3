@@ -1,4 +1,4 @@
-# Meteor Rush — Assignment 3 🚀
+# Meteor Rush — Assignment 3 
 
 > **⚠ IMPORTANT: Read before cloning — Git LFS required**
 >
@@ -40,7 +40,7 @@
 
 
 > **Assignment 3** — 2D Arcade Shooter Extension
-> **Course:** COMP 6910 Game Development | Summer 2026
+> **Course:** COMP 6970 Game Development | Summer 2026
 > **Repository:** https://github.com/COMP6970-GameDevelopment-Summer2026-AU/Assignment_3
 > **Developer:** Jahidul Arafat — PhD Student, CSSE, Auburn University
 > **Fellowship:** Presidential & Woltosz Graduate Research Fellow
@@ -50,7 +50,9 @@
 
 ## Watch the Game
 
-> *(Add YouTube demo link here after recording)*
+[![Meteor Rush — Gameplay Demo](https://img.youtube.com/vi/5efpOnBVkeM/maxresdefault.jpg)](https://youtu.be/5efpOnBVkeM)
+
+▶ [https://youtu.be/5efpOnBVkeM](https://youtu.be/5efpOnBVkeM)
 
 ---
 
