@@ -99,7 +99,7 @@ public class GameManager : MonoBehaviour
     public void PlayerHitByBullet()   // Req 4-6
     {
         if (isGameOver || isStartScreen) return;
-        currentHealth = Mathf.Max(0, currentHealth - 1);
+        currentHealth = Mathf.Max(0f, currentHealth - 0.5f); // bullet = -0.5 life
         bulletHitsTaken++;
         Debug.Log($"[GM] Bullet hit #{bulletHitsTaken} — health={currentHealth}/{maxHealth} | score={score}");
         if (currentHealth <= 0) GameOver();
@@ -341,7 +341,7 @@ public class GameManager : MonoBehaviour
         Box(sx-8, 8, tot+16, 3,  new Color(0.2f,0.6f,1f,1f)); // accent top
 
         var sHlbl = Style(12,FontStyle.Normal,new Color(0.55f,0.65f,0.75f),TextAnchor.MiddleCenter);
-        GUI.Label(new Rect(sx-8, 8, tot+16, 14), "HEALTH", sHlbl);
+        GUI.Label(new Rect(sx-8, 8, tot+16, 14), "LIVES", sHlbl);
 
         for (int i = 0; i < maxHealth; i++)
         {
@@ -350,14 +350,16 @@ public class GameManager : MonoBehaviour
             {
                 // Full life icon
                 GUI.color = Color.white;
-                if (healthTex != null) GUI.DrawTexture(new Rect(ix,22,iw,ih),healthTex);
+                Texture spriteTex2 = healthIconSprite != null ? healthIconSprite.texture : null;
+                if (spriteTex2 != null) GUI.DrawTexture(new Rect(ix,22,iw,ih),spriteTex2);
                 else { GUI.color=new Color(0.3f,0.8f,1f); GUI.DrawTexture(new Rect(ix,22,iw,ih),Texture2D.whiteTexture); }
             }
             else if (i < currentHealth)
             {
                 // Half life icon — draw at 50% alpha
                 GUI.color = new Color(1f,1f,1f,0.45f);
-                if (healthTex != null) GUI.DrawTexture(new Rect(ix,22,iw,ih),healthTex);
+                Texture spriteTex2 = healthIconSprite != null ? healthIconSprite.texture : null;
+                if (spriteTex2 != null) GUI.DrawTexture(new Rect(ix,22,iw,ih),spriteTex2);
                 else { GUI.color=new Color(0.3f,0.8f,0.4f,0.5f); GUI.DrawTexture(new Rect(ix,22,iw,ih),Texture2D.whiteTexture); }
             }
             else
