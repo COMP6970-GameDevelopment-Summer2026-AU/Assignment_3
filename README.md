@@ -1,7 +1,47 @@
-# Meteor Rush — Assignment 3
+# Meteor Rush — Assignment 3 🚀
+
+> **⚠ IMPORTANT: Read before cloning — Git LFS required**
+>
+> This project uses **Git LFS (Large File Storage)** to store binary assets
+> (PNG sprites, OGG audio, Unity prefabs, scene files).
+> Without LFS, you will see this error in Unity:
+> ```
+> Could not create asset from Assets/Sprites/...png: File could not be read
+> ```
+>
+> **To reproduce locally:**
+> ```bash
+> # Step 1 — Install Git LFS (one time per machine)
+> git lfs install
+>
+> # Step 2 — Clone the repository
+> git clone https://github.com/COMP6970-GameDevelopment-Summer2026-AU/Assignment_3
+> cd Assignment_3
+>
+> # Step 3 — Pull LFS assets (if not auto-downloaded)
+> git lfs pull
+>
+> # Step 4 — Open in Unity
+> # File → Open Project → select the cloned folder
+> # Wait for Unity to import all assets (~1-2 min first time)
+>
+> # Step 5 — Open the scene
+> # Project panel → Assets/Scenes → double-click SampleScene
+>
+> # Step 6 — Press Play ▶
+> ```
+>
+> **Verify assets loaded correctly:**
+> - Console should show NO "File could not be read" errors
+> - You should see: `[GM] Meteor Rush A3 ready. health=3`
+> - Press SPACE on the start screen — game begins
+
+---
+
 
 > **Assignment 3** — 2D Arcade Shooter Extension
-> **Course:** COMP 6970 Game Development | Summer 2026
+> **Course:** COMP 6910 Game Development | Summer 2026
+> **Repository:** https://github.com/COMP6970-GameDevelopment-Summer2026-AU/Assignment_3
 > **Developer:** Jahidul Arafat — PhD Student, CSSE, Auburn University
 > **Fellowship:** Presidential & Woltosz Graduate Research Fellow
 > **Industry:** Former L3 Senior Solution Architect (MLOps), Oracle (Singapore)
@@ -236,4 +276,4 @@ Assets/
 
 ---
 
-*Meteor Rush — COMP 6910 Game Development, Auburn University, Summer 2026*
+*Meteor Rush — COMP 6970 Game Development, Auburn University, Summer 2026*
